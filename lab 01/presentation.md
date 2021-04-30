@@ -1,8 +1,23 @@
 ---
-author: Mohamad alamin Yassin
-date: Friday 30th, 2021
-title: Presentation
+lang: en-US
+theme: metropolis
+title: First lab 
+author: |
+	Mohamad Alamin Yassin
+institute: |
+	RUDN
+date: Friday, 30th, 2021
+toc: false
+slide_level: 2
+header-includes: 
+ - \metroset{progressbar=frametitle,sectionpage=progressbar,numbering=fraction}
+ - '\makeatletter'
+ - '\beamer@ignorenonframefalse'
+ - '\makeatother'
+aspectratio: 43
+section-titles: true
 ---
+
 
 # Презентация лабораторной работы №1
 
@@ -12,6 +27,7 @@ title: Presentation
  ***Дисциплина:*** *Операционные системы*  
  
  ***Работу выполнял:*** **Яссин мохамад аламин** 
+ 
  С/б: *1032205004*  
  *НКНбд-01-20*  
  
