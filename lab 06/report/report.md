@@ -49,9 +49,6 @@ header-includes:
 
 
 
-Описываются проведённые действия, в качестве иллюстрации даётся ссылка на иллюстрацию (рис. -@fig:001)
-
-![Название рисунка](image/placeimg_800_600_tech.jpg){ #fig:001 width=70% }
 
 # Цель работы
 
@@ -93,110 +90,91 @@ header-includes:
 
 # Выполнение лабораторной работы
 
-1. Выполнил все примеры, приведённые в первой части описания лабораторнойработы
+1. Выполнил все примеры, приведённые в первой части описания лабораторнойработы (рис. -@fig:001)
 - 1
 
-![Выполнение пример 1.](image/1.1.jpg)
+![Выполнение пример 1.](https://github.com/Strikoder/OS/blob/main/lab%2006/report/img/6.1.JPG?raw=true) { #fig:001 width=70% }
 
-- 2
 
-![Выполнение пример 2.](image/1.2.jpg)
+- 2 (рис. -@fig:002)
 
-- 3
-
-![выполнение пример 3.](image/1.3.jpg)
+![выполнение пример 2.](https://github.com/Strikoder/OS/blob/main/lab%2006/report/img/6.2.JPG?raw=true) { #fig:002 width=70% }
 
 2. Выполнил следующие действия:
-- Скопируйте файл /usr/include/sys/io.h в домашний каталог и назовите его eqiuipment
+- Скопируйте файл /usr/include/sys/io.h в домашний каталог и назовите его eqiuipment (рис. -@fig:003)
 
-![Скопируйте файл](image/2.1.jpg)
 
 - Создал файл ski.plases и переместил файл eqiuipment в каталог ~/ski.plases.
 
-![Переместите файл](image/2.2.jpg)
-
 - Переименул файл ~/ski.plases/eqiuipment в ~/ski.plases/equiplist.
 
-![Переименуйте файл](image/2.4.jpg)
 
 - Создал в домашнем каталоге файл abc1 и скопировал его в каталог ~/ski.plases, назвал его equiplist2
 
-![Десйствие](image/2.5.jpg)
 
 - Создал каталог с именем equipment в каталоге ~/ski.plases.
 
-![Десйствие](image/2.6.jpg)
 
 - Переместите файлы ~/ski.plases/equiplist и equiplist2 в каталог ~/ski.plases/equipment.
 
-![Десйствие](image/2.7.jpg) 
 
 - Создал и переместите каталог ~/newdir в каталог ~/ski.plases и назвал его plans
 
-![Десйствие](image/2.8.jpg)
+![Десйствие](https://github.com/Strikoder/OS/blob/main/lab%2006/report/img/6.6.JPG?raw=true) { #fig:003 width=70% }
 
-3. Определил опции команды chmod
+3. Определил опции команды chmod (рис. -@fig:004)
 
-![chmod](image/3.jpg)
+![chmod](https://github.com/Strikoder/OS/blob/main/lab%2006/report/img/6.10.JPG?raw=true) { #fig:004 width=70% }
 
-4. Проделал приведённые ниже упражнения
-- Просмотрил содержимое файла /etc/password.
+4. Проделал приведённые ниже упражнения (рис. -@fig:005)
+- Просмотрил содержимое файла /etc/password. 
 
-![Десйствие](image/4.1.jpg)
+![Десйствие](https://github.com/Strikoder/OS/blob/main/lab%2006/report/img/6.11.JPG?raw=true) { #fig:005 width=70% }
 
--  Скопируйте файл ~/feathers в файл ~/file.old.
+-  Скопируйте файл ~/feathers в файл ~/file.old. 
 - Переместите файл ~/file.old в каталог ~/play.
 - Скопируйте каталог ~/play в каталог ~/fun.
-- Переместите каталог ~/fun в каталог ~/play и назовите его games
+- Переместите каталог ~/fun в каталог ~/play и назовите его games (рис. -@fig:006)
 
-![Десйствие](image/4.5.jpg)
+![Десйствие](https://github.com/Strikoder/OS/blob/main/lab%2006/report/img/6.12.JPG?raw=true) { #fig:006 width=70% }
 
 - Лишите владельца файла ~/feathers права на чтение.
 
-![Десйствие](image/4.6.jpg)
 
 - попытался просмотреть файл ~/feathers командой cat, он не работает "доступа нет"
 
-![Десйствие](image/4.7.jpg)
 
 - попытался скопировать файл ~/feathers, он не работает "доступа нет"
 
-![Десйствие](image/4.8.jpg)
+
 
 - Дал владельцу файла ~/feathers право на чтение.
 
-![Десйствие](image/4.9.jpg)
+
 
 
 - Лишите владельца каталога ~/play права на выполнение.
 
-![Десйствие](image/4.10.jpg)
+
 
 - Перейдите в каталог ~/play. Он успешно работал.
 
-![Десйствие](image/4.11.jpg)
 
-- Дайте владельцу каталога ~/play право на выполнение.
 
-![Десйствие](image/4.12.jpg)
+- Дайте владельцу каталога ~/play право на выполнение. (рис. -@fig:007)
 
-5. Прочитайте man по командам mount, fsck, mkfs, kill.
+![Десйствие](https://github.com/Strikoder/OS/blob/main/lab%2006/report/img/6.13.JPG?raw=true) { #fig:007 width=70% }
+
+1. Прочитайте man по командам mount, fsck, mkfs. (рис. -@fig:008)
 
 - mount используется для подключения (монтирования) файловых систем и переносных накопителей
 
-![Команда man](image/5mount.jpg)
-
 - fsck - проверяет файловую систему и исправляет в одной или нескольких файловых системах Linux
-
-![Команда man](image/5fsck.jpg)
 
 - mkfs - позволяет создать файловую систему Linux
 
-![Команда man](image/5mkfs.jpg)
+![Команда man](https://github.com/Strikoder/OS/blob/main/lab%2006/report/img/6.14.JPG?raw=true) { #fig:008 width=70% }
 
-- kill - убивает процесс
-
-![Команда man](image/5kill.jpg)
 
 
 # Выводы
