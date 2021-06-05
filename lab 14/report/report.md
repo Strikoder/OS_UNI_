@@ -46,8 +46,7 @@ header-includes:
   - \usepackage{float} # keep figures where there are in the text
   - \floatplacement{figure}{H} # keep figures where there are in the text
 ---
-(рис. -@fig:001)
-{ #fig:001 width=70% }
+
 
 # Цель работы
 
@@ -58,88 +57,84 @@ header-includes:
 
 
 
-1. Создал в нём файлы: calculate.h, calculate.c, main.c.
+1. Создал в нём файлы: calculate.h, calculate.c, main.c. (рис. -@fig:001)
 
-![файлы](img/1.1.JPG)
+![файлы](img/1.1.JPG) { #fig:001 width=70% }
 
-![calculate.c файл](img/1.2.jpg)
+![calculate.c файл](img/1.2.jpg) { #fig:002 width=70% }
 
-![calculate.h файл](img/1.3.jpg)
-
-
-2. Выполнил компиляцию программы посредством gcc
-
-![компиляция gcc](img/1.jpg)
+![calculate.h файл](img/1.3.jpg) { #fig:003 width=70% }
 
 
-3. Создал Makefile со следующим содержанием
+2. Выполнил компиляцию программы посредством gcc (рис. -@fig:004)
 
-![Makefile](img/1.4.jpg)
+![компиляция gcc](img/1.jpg) { #fig:004 width=70% }
 
-4.С помощью gdb выполнил отладку программы calcul (перед использованием gdb исправьте Makefile) 
+
+3. Создал Makefile со следующим содержанием (рис. -@fig:005)
+
+![Makefile](img/1.4.jpg) { #fig:005 width=70% }
+
+4. С помощью gdb выполнил отладку программы calcul (перед использованием gdb исправьте Makefile)  
 
 - Запустил отладчик GDB, загружил в него программу для отладки: gdb ./calcul
 
 
-- Для запуска программы внутри отладчика ввел команду run: run
+- Для запуска программы внутри отладчика ввел команду run: run (рис. -@fig:006)
 
-![run](img/4.jpg)
+![run](img/4.jpg) { #fig:006 width=70% }
 
-- Для постраничного (по 9 строк) просмотра исходного код использовал команду list:
+- Для постраничного (по 9 строк) просмотра исходного код использовал команду list: (рис. -@fig:007)
 list 
 
-![list](img/6.3.jpg)
+![list](img/3.jpg) { #fig:007 width=70% }
 
 - Для просмотра строк с 12 по 15 основного файла использовал list с параметрами:
-list 12,15
+list 12,15 (рис. -@fig:008)
 
-![list](img/6.4.jpg)
+![list](img/4.jpg) { #fig:008 width=70% }
 
 - Для просмотра определённых строк не основного файла использовал list с параметрами:
-list calculate.c:20,29
+list calculate.c:20,29 (рис. -@fig:009)
 
-![list](img/6.5.jpg)
+![list](img/5.jpg) { #fig:009 width=70% }
 
 - Установил точку останова в файле calculate.c на строке номер 21:
 list calculate.c:20,27
-break 21
+break 21 (рис. -@fig:010)
 
-![list](img/6.6.jpg)
+![list](img/6.jpg) { #fig:010 width=70% }
 
 - Вывел информацию об имеющихся в проекте точка останова:
-info breakpoints
+info breakpoints (рис. -@fig:011)
 
-![breakpoints](img/6.7.jpg)
+![breakpoints](img/7.jpg) { #fig:011 width=70% }
 
 - Запустил программу внутри отладчика и убедитесь, что программа остановится в момент прохождения точки останова:
-run
-5
--
-backtrace
+run.
+backtrace (рис. -@fig:012)
 
-![run](img/6.8.jpg)
+![run](img/8.jpg) { #fig:012 width=70% }
 
 - Посмотрил, чему равно на этом этапе значение переменной Numeral, введя:
-print Numeral
+print Numeral (рис. -@fig:013)
 
-![print](img/6.9.jpg)
+![print](img/9.jpg) { #fig:013 width=70% }
 
 - Сравнил с результатом вывода на экран после использования команды:
-display Numeral
+display Numeral (рис. -@fig:014)
 
-![display](img/6.10.jpg)
+![display](img/10.jpg) { #fig:014 width=70% }
 
 - Убрал точки останова:
 info breakpoints
-delete 1
+delete 1 (рис. -@fig:015)
 
-![delete](img/6.11.jpg)
+![delete](img/11.jpg) { #fig:015 width=70% }
 
-1. С помощью утилиты splint попробовал проанализировать коды файлов calculate.c и main.c.
+5. С помощью утилиты splint попробовал проанализировать коды файлов calculate.c и main.c. (рис. -@fig:016)
 
-![splint calculate.c](img/7.1.jpg)
-
-![splint main.c](img/7.2.jpg)
+![splint calculate.c](img/12.jpg) { #fig:016 width=70% }
 
 # Выводы
 
